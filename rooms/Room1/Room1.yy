@@ -7,21 +7,11 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_5623C396","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_7716464","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_30426A27","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_2D3B2CC5","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_18AD73D2","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_1180FD6C","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_5623C396","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5623C396","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.6,"scaleY":0.7,"x":256.0,"y":416.0,},
-        {"$GMRInstance":"v4","%Name":"inst_7716464","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7716464","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.5,"scaleY":5.5,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v4","%Name":"inst_30426A27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30426A27","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":5.0,"x":0.0,"y":160.0,},
-        {"$GMRInstance":"v4","%Name":"inst_2D3B2CC5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D3B2CC5","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.609375,"scaleY":3.5,"x":0.0,"y":480.0,},
-        {"$GMRInstance":"v4","%Name":"inst_18AD73D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_18AD73D2","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":5.5,"x":672.0,"y":352.0,},
-        {"$GMRInstance":"v4","%Name":"inst_1180FD6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1180FD6C","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":1.0,"x":32.0,"y":640.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"environment","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_164093A2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_164093A2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cafe","path":"sprites/spr_cafe/spr_cafe.yy",},"x":621.0,"y":553.0,},

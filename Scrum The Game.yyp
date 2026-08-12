@@ -35,7 +35,6 @@
   "name":"Scrum The Game",
   "resources":[
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"bg_quarto","path":"sprites/bg_quarto/bg_quarto.yy",},},
     {"id":{"name":"spr_cafe","path":"sprites/spr_cafe/spr_cafe.yy",},},
@@ -45,7 +44,6 @@
     {"id":{"name":"spr_player_esq","path":"sprites/spr_player_esq/spr_player_esq.yy",},},
     {"id":{"name":"spr_player_frente","path":"sprites/spr_player_frente/spr_player_frente.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
-    {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
