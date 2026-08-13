@@ -35,9 +35,11 @@
   "name":"Scrum The Game",
   "resources":[
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"bg_quarto","path":"sprites/bg_quarto/bg_quarto.yy",},},
     {"id":{"name":"spr_cafe","path":"sprites/spr_cafe/spr_cafe.yy",},},
+    {"id":{"name":"spr_colisao","path":"sprites/spr_colisao/spr_colisao.yy",},},
     {"id":{"name":"spr_fumacinha","path":"sprites/spr_fumacinha/spr_fumacinha.yy",},},
     {"id":{"name":"spr_player_costa","path":"sprites/spr_player_costa/spr_player_costa.yy",},},
     {"id":{"name":"spr_player_dire","path":"sprites/spr_player_dire/spr_player_dire.yy",},},
