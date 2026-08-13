@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_player_costa",
   "bboxMode":0,
-  "bbox_bottom":140,
+  "bbox_bottom":139,
   "bbox_left":0,
   "bbox_right":149,
   "bbox_top":1,
