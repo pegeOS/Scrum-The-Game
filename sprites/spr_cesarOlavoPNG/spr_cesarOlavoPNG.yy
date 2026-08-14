@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"a556ada9-224d-4cb1-a2be-1b480fe85566","name":"a556ada9-224d-4cb1-a2be-1b480fe85566","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":15,
-  "gridY":15,
+  "gridX":5,
+  "gridY":5,
   "height":603,
   "HTile":false,
   "layers":[
@@ -23,7 +23,7 @@
   ],
   "name":"spr_cesarOlavoPNG",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"outros",
     "path":"folders/Sprites/Player/outros.yy",
@@ -75,8 +75,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":265,
+    "yorigin":301,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
