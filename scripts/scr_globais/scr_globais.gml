@@ -1,0 +1,2 @@
+
+global.progresso = 67
