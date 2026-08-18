@@ -39,6 +39,7 @@
   "resources":[
     {"id":{"name":"fnt_windows","path":"fonts/fnt_windows/fnt_windows.yy",},},
     {"id":{"name":"obj_barra_progresso","path":"objects/obj_barra_progresso/obj_barra_progresso.yy",},},
+    {"id":{"name":"obj_cama","path":"objects/obj_cama/obj_cama.yy",},},
     {"id":{"name":"obj_energy_bar","path":"objects/obj_energy_bar/obj_energy_bar.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_vsCode","path":"objects/obj_vsCode/obj_vsCode.yy",},},
@@ -55,6 +56,7 @@
     {"id":{"name":"spr_cabecalho","path":"sprites/spr_cabecalho/spr_cabecalho.yy",},},
     {"id":{"name":"spr_cabecalho2","path":"sprites/spr_cabecalho2/spr_cabecalho2.yy",},},
     {"id":{"name":"spr_cafe","path":"sprites/spr_cafe/spr_cafe.yy",},},
+    {"id":{"name":"spr_cama","path":"sprites/spr_cama/spr_cama.yy",},},
     {"id":{"name":"spr_cesarOlavo","path":"sprites/spr_cesarOlavo/spr_cesarOlavo.yy",},},
     {"id":{"name":"spr_cesarOlavoPNG","path":"sprites/spr_cesarOlavoPNG/spr_cesarOlavoPNG.yy",},},
     {"id":{"name":"spr_colisao","path":"sprites/spr_colisao/spr_colisao.yy",},},
@@ -80,8 +82,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_codando","path":"rooms/rm_codando/rm_codando.yy",},},
     {"roomId":{"name":"rm_quarto","path":"rooms/rm_quarto/rm_quarto.yy",},},
+    {"roomId":{"name":"rm_codando","path":"rooms/rm_codando/rm_codando.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
