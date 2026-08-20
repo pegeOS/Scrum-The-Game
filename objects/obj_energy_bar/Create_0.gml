@@ -10,6 +10,6 @@ image_index = 0; // começa cheia
 energy = segment_max;
 
 // ----- CONFIGURAÇÃO DO TEMPO -----
-minutos_por_dia = 24 * 60;
+minutos_por_dia = 15 * 60;
 segundos_por_dia = minutos_por_dia;
 tempo_decorrido = 0;
