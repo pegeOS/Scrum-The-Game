@@ -48,6 +48,7 @@
     {"id":{"name":"scr_globais","path":"scripts/scr_globais/scr_globais.yy",},},
     {"id":{"name":"bg_quarto","path":"sprites/bg_quarto/bg_quarto.yy",},},
     {"id":{"name":"michael_colega","path":"sprites/michael_colega/michael_colega.yy",},},
+    {"id":{"name":"mulher1_colega","path":"sprites/mulher1_colega/mulher1_colega.yy",},},
     {"id":{"name":"spr_azul","path":"sprites/spr_azul/spr_azul.yy",},},
     {"id":{"name":"spr_barra_de_energia","path":"sprites/spr_barra_de_energia/spr_barra_de_energia.yy",},},
     {"id":{"name":"spr_botao","path":"sprites/spr_botao/spr_botao.yy",},},
