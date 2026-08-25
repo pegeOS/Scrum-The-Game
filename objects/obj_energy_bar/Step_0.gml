@@ -5,7 +5,7 @@ image_index = clamp(round(segment_max - energy), 0, segment_max);
 
 
 if (global.dormindo) {
-    energy = segment_max * global.progresso_dia; // dormindo: energia sobe
+    energy = segment_max * (0.3 + global.progresso_dia); // dormindo: energia sobe
 } else {
     energy = segment_max * (1 - global.progresso_dia); // acordado: energia cai
 }
