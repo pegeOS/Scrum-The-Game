@@ -1,4 +1,4 @@
 
-global.progresso = 67
+global.progresso = 0
 
 global.azul = make_colour_rgb(0, 0, 153)
