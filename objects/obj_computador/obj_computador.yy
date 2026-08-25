@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_energy_bar",
+  "%Name":"obj_computador",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_energy_bar",
+  "name":"obj_computador",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_barra_de_energia",
-    "path":"sprites/spr_barra_de_energia/spr_barra_de_energia.yy",
+    "name":"spr_computador",
+    "path":"sprites/spr_computador/spr_computador.yy",
   },
   "spriteMaskId":null,
   "visible":true,
