@@ -9,7 +9,8 @@ image_index = 0; // começa cheia
 
 energy = segment_max;
 
-// ----- CONFIGURAÇÃO DO TEMPO -----
-minutos_por_dia = 24 * 60;
-segundos_por_dia = minutos_por_dia;
-tempo_decorrido = 0;
+global.minutos_por_dia = 16 * 60;
+global.segundos_por_dia = global.minutos_por_dia;
+global.tempo_decorrido = 0;
+global.progresso_dia = 0;
+global.dormindo = false;

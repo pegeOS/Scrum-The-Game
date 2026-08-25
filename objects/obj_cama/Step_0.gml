@@ -18,8 +18,13 @@ if (mostrar_prompt && keyboard_check_pressed(ord("E"))) {
     obj_player.sprite_index = spr_player_idle;
     obj_player.image_index = 0;
     obj_player.image_speed = 0;
+	global.dormindo = true;
+	global.segundos_por_dia = 1*60
 } else if (obj_player.deitado && keyboard_check_pressed(ord("E")) && point_distance(x, y, obj_player.x, obj_player.y) <= range_interacao) {
     obj_player.deitado = false;
     obj_player.sprite_index = spr_player_idle;
-    obj_player.image_speed = 1;
+    obj_player.image_speed = 4;
+	obj_player.x = x_levantar;
+	obj_player.y = y_levantar;
+	global.dormindo = false;
 }
