@@ -14,3 +14,7 @@ global.segundos_por_dia = global.minutos_por_dia;
 global.tempo_decorrido = 0;
 global.progresso_dia = 0;
 global.dormindo = false;
+// ----- CONFIGURAÇÃO DO TEMPO -----
+minutos_por_dia = 15 * 60;
+segundos_por_dia = minutos_por_dia;
+tempo_decorrido = 0;
