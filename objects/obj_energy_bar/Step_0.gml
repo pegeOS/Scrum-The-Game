@@ -1,10 +1,19 @@
-tempo_decorrido += delta_time / 1000000;
-var progresso_dia = clamp(tempo_decorrido / segundos_por_dia, 0, 1);
+var _delta = delta_time / 1000000;
 
-energy = segment_max * (1 - progresso_dia);
+global.tempo_decorrido += _delta;
+global.progresso_dia = clamp(global.tempo_decorrido / global.duracao_dia, 0, 1);
 
+if (global.dormindo) {
+    var _taxa = segment_max / global.duracao_sono;
+    energy += _taxa * _delta;
+} else {
+    var _taxa = segment_max / global.duracao_dia;
+    energy -= _taxa * _delta;
+}
+
+energy = clamp(energy, 0, segment_max);
 image_index = clamp(round(segment_max - energy), 0, segment_max);
 
-if (energy <= 0) {
-    // fim do dia
+if (global.progresso_dia >= 1) {
+    show_message("Acabou o dia");
 }

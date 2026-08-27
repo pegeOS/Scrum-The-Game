@@ -1,15 +1,13 @@
-// ----- SPRITE E ESCALA -----
 image_xscale = 0.12;
 image_yscale = 0.12;
-
 sprite_index = spr_barra_de_energia;
-segment_max = sprite_get_number(sprite_index) - 1; // último frame = vazio
+segment_max = sprite_get_number(sprite_index) - 1;
 image_speed = 0;
-image_index = 0; // começa cheia
-
+image_index = 0;
 energy = segment_max;
 
-// ----- CONFIGURAÇÃO DO TEMPO -----
-minutos_por_dia = 15 * 60;
-segundos_por_dia = minutos_por_dia;
-tempo_decorrido = 0;
+global.duracao_dia = 15 * 60;   // segundos que o dia dura acordado
+global.duracao_sono = 60;       // segundos que a cama demora pra encher a energia
+global.tempo_decorrido = 0;
+global.progresso_dia = 0;
+global.dormindo = false;

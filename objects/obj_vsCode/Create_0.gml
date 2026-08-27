@@ -101,5 +101,4 @@ reset = function(){
 	
 	aleatorio = codigos[irandom(array_length(codigos) - 1)]
 	digitando = ""
-
 }

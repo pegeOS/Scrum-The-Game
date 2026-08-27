@@ -46,4 +46,3 @@ draw_set_colour(c_gray)
 draw_text_ext_transformed(120 + string_width(digitando) * 1.5, 680, _resto, -1, room_width - 420, 1.5, 1.5, 0)
 
 draw_set_alpha(1)
-draw_set_colour(global.azul)
