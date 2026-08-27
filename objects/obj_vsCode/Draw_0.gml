@@ -18,6 +18,7 @@ for(var i = 1; i <= string_length(aleatorio); i++){
     if (_char != " " && _char != "\n")
     {
         _contador++;
+		//situa a posição que a string deve começar a partir do n_typed (oq o player digitou)
         if(_contador == _n_typed){
             _pos = i + 1;
             break;
@@ -37,12 +38,12 @@ if (_pos > 1 && string_char_at(aleatorio, _pos - 1) == "\n")
 // desenha o que já foi digitado, em rosa
 draw_set_alpha(1)
 draw_set_colour(c_fuchsia)
-draw_text_ext_transformed(120, 680, digitando, -1, room_width - 500, 1.5, 1.5, 0)
+draw_text_ext_transformed(120, 680, digitando, -1, room_width - 420, 1.5, 1.5, 0)
 
 // desenha o resto, em cinza, logo depo	is do que já foi digitado
 draw_set_alpha(0.6)
 draw_set_colour(c_gray)
-draw_text_ext_transformed(120 + string_width(digitando) * 1.5, 680, _resto, -1, room_width - 500, 1.5, 1.5, 0)
+draw_text_ext_transformed(120 + string_width(digitando) * 1.5, 680, _resto, -1, room_width - 420, 1.5, 1.5, 0)
 
 draw_set_alpha(1)
 draw_set_colour(global.azul)
