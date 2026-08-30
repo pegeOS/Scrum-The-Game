@@ -52,6 +52,7 @@
     {"id":{"name":"obj_energy_bar","path":"objects/obj_energy_bar/obj_energy_bar.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
+    {"id":{"name":"obj_time_manager","path":"objects/obj_time_manager/obj_time_manager.yy",},},
     {"id":{"name":"obj_vsCode","path":"objects/obj_vsCode/obj_vsCode.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"rm_codando","path":"rooms/rm_codando/rm_codando.yy",},},
