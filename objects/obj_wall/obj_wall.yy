@@ -6,8 +6,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"invisiveis",
+    "path":"folders/Objects/invisiveis.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,8 +9,8 @@
   "name":"obj_barra_progresso",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"barras e barras",
+    "path":"folders/Objects/barras e barras.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_energy_bar",
+  "%Name":"obj_botaoClose",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_energy_bar",
+  "name":"obj_botaoClose",
   "overriddenProperties":[],
   "parent":{
-    "name":"barras e barras",
-    "path":"folders/Objects/barras e barras.yy",
+    "name":"popup",
+    "path":"folders/Objects/popup.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_barra_de_energia",
-    "path":"sprites/spr_barra_de_energia/spr_barra_de_energia.yy",
+    "name":"spr_botaoClose",
+    "path":"sprites/spr_botaoClose/spr_botaoClose.yy",
   },
   "spriteMaskId":null,
   "visible":true,

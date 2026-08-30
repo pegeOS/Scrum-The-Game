@@ -35,14 +35,16 @@ if (_pos > 1 && string_char_at(aleatorio, _pos - 1) == "\n")
     _resto = "\n" + _resto;
 }
 
+draw_set_font(fnt_windows_grande)
 // desenha o que já foi digitado, em rosa
 draw_set_alpha(1)
 draw_set_colour(c_fuchsia)
-draw_text_ext_transformed(120, 680, digitando, -1, room_width - 420, 1.5, 1.5, 0)
+draw_text_ext_transformed(120, 680, digitando, -1, room_width - 370, 1, 1, 0)
 
 // desenha o resto, em cinza, logo depo	is do que já foi digitado
 draw_set_alpha(0.6)
 draw_set_colour(c_gray)
-draw_text_ext_transformed(120 + string_width(digitando) * 1.5, 680, _resto, -1, room_width - 420, 1.5, 1.5, 0)
+draw_text_ext_transformed(120 + string_width(digitando), 680, _resto, -1, room_width - 370, 1, 1, 0)
 
+draw_set_font(-1)
 draw_set_alpha(1)

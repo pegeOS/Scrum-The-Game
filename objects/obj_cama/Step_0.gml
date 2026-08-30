@@ -16,10 +16,10 @@ if(instance_exists(obj_cama) && instance_exists(obj_player)){
 	if (mostrar_prompt && keyboard_check_pressed(ord("E"))) {
 	    obj_player.deitado = true;
 	    obj_player.x = x;
-	    obj_player.y = y - 10;
-	    obj_player.sprite_index = spr_player_idle;
+	    obj_player.y = y - 50;
+	    obj_player.sprite_index = spr_player_dormindo;
 	    obj_player.image_index = 0;
-	    obj_player.image_speed = 0;
+	    obj_player.image_speed = 1;
 	    global.dormindo = true;
 	} else if (obj_player.deitado && keyboard_check_pressed(ord("E")) && point_distance(x, y, obj_player.x, obj_player.y) <= range_interacao) {
 	    obj_player.deitado = false;

@@ -1,8 +1,5 @@
-if (deitado) {
-    // trava tudo: nem lê movimento, nem muda sprite
-    image_speed = 0;
-    image_index = 0;
-} else {
+//se nao tiver deitado e nem tiver nenhum pop up na tela, pode se mover
+if(!deitado && !instance_exists(obj_popup)){
     move();
     if (key_right) facing = "right";
     else if (key_left) facing = "left";

@@ -41,13 +41,11 @@ move = function(){
 		}
     
 	   
-	} else {
-	
+	}
+	else{
+		image_index = 0
+		image_speed = 0
 		
-	    image_speed = 0;
-		
-	    // E cravamos o frame no índice 0 (geralmente a pose inicial de pé parado)
-	    image_index = 0;
 	}
 
 }
