@@ -5,3 +5,7 @@ global.tutorial_pc = false
 global.veio_do_tutorial = false
 global.azul = make_colour_rgb(0, 0, 153)
 
+global.trabalhando = false
+
+global.dormindo = false
+
