@@ -1,5 +1,4 @@
-image_xscale = 0.12;
-image_yscale = 0.12;
+
 sprite_index = spr_barra_de_energia;
 segment_max = sprite_get_number(sprite_index) - 1;
 image_speed = 0;

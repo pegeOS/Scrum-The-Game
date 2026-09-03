@@ -18,5 +18,7 @@ draw_rectangle(x, y, x + amount, y + barra_h - 5, false)
 //escrevendo porcentagem
 draw_text_transformed(x + 260, y + 20, string(global.progresso) + "%", 1, 1, 0)
 
+draw_set_halign(-1)
+draw_set_valign(-1)
 draw_set_font(-1)
 draw_set_colour(-1)

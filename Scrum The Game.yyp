@@ -57,6 +57,7 @@
     {"id":{"name":"rm_codando","path":"rooms/rm_codando/rm_codando.yy",},},
     {"id":{"name":"rm_quarto","path":"rooms/rm_quarto/rm_quarto.yy",},},
     {"id":{"name":"scr_globais","path":"scripts/scr_globais/scr_globais.yy",},},
+    {"id":{"name":"scr_quebrar_texto","path":"scripts/scr_quebrar_texto/scr_quebrar_texto.yy",},},
     {"id":{"name":"snd_testeQuarto","path":"sounds/snd_testeQuarto/snd_testeQuarto.yy",},},
     {"id":{"name":"bg_quarto","path":"sprites/bg_quarto/bg_quarto.yy",},},
     {"id":{"name":"spr_azul","path":"sprites/spr_azul/spr_azul.yy",},},

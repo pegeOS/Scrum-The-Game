@@ -1,27 +1,32 @@
 
-criado = false
+encolher = false;
 
-image_xscale = 0
-image_yscale = 0
-//funcao pro popup surgir
+image_xscale = 0;
+image_yscale = 0;
+
+// Cria o botão imediatamente
+meu_botao = instance_create_layer(x, y, "botoes", obj_botaoClose);
+meu_botao.popup_pai = id;
+
+// Função pro popup surgir
 criar = function(){
-	
-	image_xscale = lerp(image_xscale, 1, 0.1)
-	image_yscale = lerp(image_yscale, 1, 0.1)
+    x = lerp(x, 414, 0.1);
+    y = lerp(y, 464, 0.1);
+    
+    image_xscale = lerp(image_xscale, 1, 0.2);
+    image_yscale = lerp(image_yscale, 1, 0.2);
 }
 
-
-//criando botao interativo de close junto do popup toda vez
-instance_create_layer(x + 128, y - 104, "botoes", obj_botaoClose)
-
-encolher = false
-
 destruir = function(){
-	
-	
-	image_xscale = lerp(image_xscale, 0, 0.2)
-	image_yscale = lerp(image_yscale, 0, 0.2)
-		
-	if(image_xscale <= 0.015 && image_yscale <= 0.015) instance_destroy(id)
-
+    image_xscale = lerp(image_xscale, 0, 0.2);
+    image_yscale = lerp(image_yscale, 0, 0.2);
+        
+    if (image_xscale <= 0.015 && image_yscale <= 0.015) {
+        if (instance_exists(meu_botao)) instance_destroy(meu_botao);
+        encolher = false;
+        instance_destroy();
+		if(titulo == "Computador"){
+			room_goto(rm_codando);
+		}// só troca de sala depois que o popup sumiu de vez
+    }
 }

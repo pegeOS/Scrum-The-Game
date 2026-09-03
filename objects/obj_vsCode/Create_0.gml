@@ -1,30 +1,36 @@
 //randomizando os codigos que aparecem
 randomize()
 
-vitoria = 5
+vitoria = 3
 
 aguardando_soltar_interacao = true; 
 pode_digitar = false;
 
+randomize()
+
 codigos = [
-    "print('Hello World')",
-    "var valor = 5", 
-    "console.log('Nao aguento mais trabalhar')", 
-    "<p>Scrum, uma metodologia agil perfeita</p>",
-    "function soma(a,b) return a + b", 
-    "for( int i = 0; i < 10; i++ ) print(i)"
+"print('Hello World')",
+"var valor = 5", 
+"while(True) print('Eu me demito')",
+"<p> Scrum, uma metodologia incrivel </p>",
+"function soma(a,b) return a + b", 
+"for( int i = 0; i < 10; i++ ) print(i)"
 ]
 
-//pegando um codigo aleatorio da array
-aleatorio = codigos[irandom(array_length(codigos) - 1)]
+draw_set_font(fnt_windows_grande)
 
-//criando uma variavel que armazena o que o player digita
+var _largura_max = room_width - 310;
+for(var i = 0; i < array_length(codigos); i++) {
+    codigos[i] = scr_quebrar_texto(codigos[i], _largura_max)
+}
+
+aleatorio = codigos[irandom(array_length(codigos) - 1)]
 digitando = ""
 
-mecanica = function(){
+mecanica = function(){ 
 	
 	if (aguardando_soltar_interacao) {
-	    if (keyboard_check_released(ord("E"))) {
+	    if (keyboard_check_released(ord("E")) || global.veio_do_tutorial) {
 	        aguardando_soltar_interacao = false;
 	        pode_digitar = true; // Liberado para começar a rodar o minigame!
 	    }
@@ -82,10 +88,21 @@ mecanica = function(){
 					for(var i = 0; i <= string_length(_digit_sem_espaco); i++){
 						if(string_char_at(_digit_sem_espaco, i) != string_char_at(_aleatorio_sem_espaco, i)) _contador++
 					}
-				
+					
+					
 					//se o contador for menor que o valor de vitoria ( 5 ), ele so ganha uma parte dos pontos
 					if(_contador <= vitoria) global.progresso += vitoria - _contador
-					else if(_contador > vitoria && global.progresso >0) global.progresso -= vitoria
+					else if(_contador > vitoria){ 
+						_contador = 5
+						
+						//codigo para se o progresso for 3 e ele errar mais do que 5 caracteres ( perde oq falta)
+						if(_contador > global.progresso){
+							global.progresso -= global.progresso
+						}
+						else{
+							global.progresso -= _contador
+						}
+					}
 			}
 		}
 	}
@@ -93,12 +110,20 @@ mecanica = function(){
 
 reset = function(){
 
-	//pegando a posicao do codigo na array
-	var _posicao = array_get_index(codigos, aleatorio)
+		//pegando a posicao do codigo na array
+		var _posicao = array_get_index(codigos, aleatorio)
 	
-	//deletando da array para randomizar dnv
-	array_delete(codigos, _posicao, 1)
-	
-	aleatorio = codigos[irandom(array_length(codigos) - 1)]
+		//deletando da array para randomizar dnv
+		array_delete(codigos, _posicao, 1)
+
+	if(array_length(codigos) >= 1){
+		aleatorio = codigos[irandom(array_length(codigos) - 1)]
+	}
+	else{
+		show_message("gameplay terminada")
+		room = rm_quarto
+	}
 	digitando = ""
 }
+
+show_debug_message(aleatorio)
