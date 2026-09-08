@@ -12,7 +12,37 @@ codigos = [
 	"while(True) print('Eu me demito')",
 	"<p> Scrum, uma metodologia incrivel </p>",
 	"function soma(a,b) return a + b", 
-	"for( int i = 0; i < 10; i++ ) print(i)"
+	"for( int i = 0; i < 10; i++ ) print(i)",
+	"current_hour += 2;",
+	"git commit -m 'testando'",
+	"<h1>Titulo Maneiro</h1>",
+	"a,b = b,a",
+	"def fib(n):",
+	"justify-content: center;",
+	"git commit -m 'fix'",
+	"npm install",
+	"git add node_modules",
+	"[c for c in lista]",
+	"DROP TABLE users;",
+	"opacity: .5;",
+	"db.users.find().pretty()",
+	"JSON.parse(data)",
+	"import pandas as pd",
+	"docker run -d -p",
+	"docker images",
+	"docker run helloWorld",
+	"git switch main",
+	"flutter create google2.0",
+	"let http = require('http')",
+	"process.exit(1)",
+	"model.predict(X_test)",
+	"openai.ChatCompletion.create",
+	"//TODO: fix this later",
+	"console.log('IF ENTROU')",
+	"var any: any;"
+	
+	
+	
 ]
 
 draw_set_font(fnt_windows_grande)
