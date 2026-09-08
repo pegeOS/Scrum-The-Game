@@ -104,6 +104,7 @@
     {"id":{"name":"spr_sofa","path":"sprites/spr_sofa/spr_sofa.yy",},},
     {"id":{"name":"spr_toggle_selected","path":"sprites/spr_toggle_selected/spr_toggle_selected.yy",},},
     {"id":{"name":"spr_toggle_vazio","path":"sprites/spr_toggle_vazio/spr_toggle_vazio.yy",},},
+    {"id":{"name":"Sprite43","path":"sprites/Sprite43/Sprite43.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
