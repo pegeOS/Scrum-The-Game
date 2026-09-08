@@ -1,6 +1,6 @@
 show_debug_message("TESTE: O objeto relogio nasceu!");
 
-pausas = ["8:00 AM","10:00 AM","12:00 AM","2:00 PM","4:00 PM","6:00 PM","8:00 PM","10:00 PM"]
+pausas = ["8:00","10:00","12:00","14:00","16:00","18:00","20:00","22:00"]
 texto_horario = "";
 //variavel de controle pra deixar vermelho ou nao
 cor = c_white
