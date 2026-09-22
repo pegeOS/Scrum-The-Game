@@ -8,11 +8,13 @@
   "instanceCreationOrder":[
     {"name":"inst_67D6A63C","path":"rooms/rm_codando/rm_codando.yy",},
     {"name":"inst_670987FE","path":"rooms/rm_codando/rm_codando.yy",},
+    {"name":"inst_D0A05FE","path":"rooms/rm_codando/rm_codando.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"barra","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_670987FE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_670987FE","objectId":{"name":"obj_barra_progresso","path":"objects/obj_barra_progresso/obj_barra_progresso.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":359.0,"y":64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_D0A05FE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D0A05FE","objectId":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":416.0,},
       ],"layers":[],"name":"barra","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"cesar","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6D717C9A","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6D717C9A","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8,"scaleY":0.8,"spriteId":{"name":"spr_cesarOlavoPNG","path":"sprites/spr_cesarOlavoPNG/spr_cesarOlavoPNG.yy",},"x":443.0,"y":392.0,},
