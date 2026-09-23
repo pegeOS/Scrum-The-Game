@@ -21,6 +21,7 @@ if(instance_exists(obj_cama) && instance_exists(obj_player)){
 	    obj_player.image_index = 0;
 	    obj_player.image_speed = 1;
 	    global.dormindo = true;
+		
 	} else if (obj_player.deitado && keyboard_check_pressed(ord("E")) && point_distance(x, y, obj_player.x, obj_player.y) <= range_interacao) {
 	    obj_player.deitado = false;
 	    obj_player.sprite_index = spr_player_idle;

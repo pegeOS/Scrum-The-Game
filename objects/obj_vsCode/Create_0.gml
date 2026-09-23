@@ -1,6 +1,8 @@
 //randomizando os codigos que aparecem
 randomize()
 
+global.trabalhando = true
+
 vitoria = 3
 
 aguardando_soltar_interacao = true; 

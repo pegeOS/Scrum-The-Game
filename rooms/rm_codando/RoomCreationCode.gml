@@ -1,0 +1,2 @@
+
+global.trabalhando = true
