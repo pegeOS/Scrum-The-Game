@@ -1,5 +1,4 @@
 
-
 // calcula hora
 var _hora_total = 7.5 + (global.progresso_dia * 14); 
 global.hora_atual = _hora_total; 

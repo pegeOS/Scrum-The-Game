@@ -5,12 +5,12 @@ var _hora_entrou = global.hora_entrada_trabalho;
 var _proxima_hora = _hora_entrou;
 
 // 2. Horários alvos em formato decimal (9:55, 11:55, 13:55, 15:55, 17:55, 19:55, 21:55)
-var _alvos = [ 9.9166, 11.9166, 13.9166, 15.9166, 17.9166, 19.9166, 21.9166 ];
+var alvos = [ 9.9166, 11.9166, 13.9166, 15.9166, 17.9166, 19.9166, 21.9166 ];
 
 // 3. Procura o próximo horário quebrado
-for (var i = 0; i < array_length(_alvos); i++) {
-	if (_alvos[i] > _hora_entrou + 0.05) {
-		_proxima_hora = _alvos[i];
+for (var i = 0; i < array_length(alvos); i++) {
+	if (alvos[i] > _hora_entrou + 0.05) {
+		_proxima_hora = alvos[i];
 		break;
 	}
 }
