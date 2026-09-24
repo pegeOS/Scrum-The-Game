@@ -2,6 +2,8 @@
 randomize()
 
 global.trabalhando = true
+global.hora_entrada_trabalho = global.hora_atual
+
 
 vitoria = 3
 
