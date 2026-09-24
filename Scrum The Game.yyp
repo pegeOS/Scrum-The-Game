@@ -47,11 +47,11 @@
   "resources":[
     {"id":{"name":"fnt_windows_grande","path":"fonts/fnt_windows_grande/fnt_windows_grande.yy",},},
     {"id":{"name":"fnt_windows","path":"fonts/fnt_windows/fnt_windows.yy",},},
+    {"id":{"name":"obj_barra_energia","path":"objects/obj_barra_energia/obj_barra_energia.yy",},},
     {"id":{"name":"obj_barra_progresso","path":"objects/obj_barra_progresso/obj_barra_progresso.yy",},},
     {"id":{"name":"obj_botaoClose","path":"objects/obj_botaoClose/obj_botaoClose.yy",},},
     {"id":{"name":"obj_cama","path":"objects/obj_cama/obj_cama.yy",},},
     {"id":{"name":"obj_computador","path":"objects/obj_computador/obj_computador.yy",},},
-    {"id":{"name":"obj_energy_bar","path":"objects/obj_energy_bar/obj_energy_bar.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"obj_relogio","path":"objects/obj_relogio/obj_relogio.yy",},},
