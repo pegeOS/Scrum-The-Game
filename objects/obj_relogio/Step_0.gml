@@ -1,7 +1,6 @@
 
 
 	
-	
 var _hora_total = 7.5 + (global.progresso_dia * 14); 
 global.hora_atual = _hora_total; 
 var _hora = floor(_hora_total); 
@@ -14,3 +13,5 @@ var _min_str = (_minuto < 10) ? "0" + string(_minuto) : string(_minuto);
 texto_horario = string(_hora) + ":" + _min_str
 	
 verificar_horario()
+
+show_debug_message(global.hora_atual)
