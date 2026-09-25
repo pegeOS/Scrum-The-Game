@@ -21,13 +21,12 @@ verificar_horario = function() {
 		// Se o player escolheu trabalhar ou dormir, fica branco
 		cor = c_white;
 	} else {
-		// Se ele NÃO escolheu ação, checa se é hora de ficar vermelho
+		// Se ele não escolheu ação, checa se é hora de ficar vermelho
 		for (var i = 0; i < array_length(pausas); i++) {
 			if (texto_horario == pausas[i]) {
 				cor = c_red;
 				break;
 			}
 		}
-		// OBS: Não tem "cor = c_white" aqui. Se ficou vermelho, continua vermelho às 8:01, 8:02...
 	}
 }

@@ -74,6 +74,7 @@
     {"id":{"name":"spr_cabecalho2","path":"sprites/spr_cabecalho2/spr_cabecalho2.yy",},},
     {"id":{"name":"spr_cafe","path":"sprites/spr_cafe/spr_cafe.yy",},},
     {"id":{"name":"spr_cama","path":"sprites/spr_cama/spr_cama.yy",},},
+    {"id":{"name":"spr_cartas_pedro","path":"sprites/spr_cartas_pedro/spr_cartas_pedro.yy",},},
     {"id":{"name":"spr_cartas","path":"sprites/spr_cartas/spr_cartas.yy",},},
     {"id":{"name":"spr_cesarOlavo","path":"sprites/spr_cesarOlavo/spr_cesarOlavo.yy",},},
     {"id":{"name":"spr_cesarOlavoPNG","path":"sprites/spr_cesarOlavoPNG/spr_cesarOlavoPNG.yy",},},

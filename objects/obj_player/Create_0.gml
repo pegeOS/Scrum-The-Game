@@ -20,6 +20,7 @@ move = function(){
 
 	// 3. Verificar se há movimento
 	if ((_input_x != 0 || _input_y != 0) && !obj_player.deitado) {
+		
 		image_speed = 1
 	    // Obter direção em graus (0 a 360)
 	    var _move_dir = point_direction(0, 0, _input_x, _input_y);
@@ -43,7 +44,7 @@ move = function(){
 	   
 	}
 	else{
-		image_index = 0
+		image_index = 1
 		image_speed = 0
 		
 	}
