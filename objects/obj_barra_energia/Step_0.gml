@@ -22,7 +22,54 @@ if (global.dormindo) {
 global.progresso_dia = clamp(global.tempo_decorrido / global.duracao_dia, 0, 1);
 energy = clamp(energy, 0, segment_max);
 image_index = clamp(round(segment_max - energy), 0, segment_max);
-
-if (global.progresso_dia >= 1) {
-    show_message("Acabou o dia");
+//Verifica se o dia já estourou o tempo máximo (22:00)
+if (global.progresso_dia >= 1 && !global.dormindo && !global.dia_avancando) { 
+    global.dia_avancando = true; 
+    
+	//Verifica a existẽncia da cama, medida de segurança
+    if (!instance_exists(obj_cama)) { 
+        room_goto(rm_quarto); 
+    } 
+    //Verifica a existẽncia do player, medida de segurança
+    if (instance_exists(obj_player)) { 
+        obj_player.deitado = true; 
+        obj_player.sprite_index = spr_player_dormindo; 
+        obj_player.image_index = 0; 
+        obj_player.image_speed = 1; 
+        
+        if (instance_exists(obj_cama)) { 
+            obj_player.x = obj_cama.x; 
+            obj_player.y = obj_cama.y - 50; 
+        
+        } 
+    } 
+    
+ 
+    global.tempo_decorrido = 0; 
+    global.dia_atual += 1;
+	global.transicao_dia = 200
+    
+    if (global.dia_atual > global.dia_maximo) { 
+        global.dia_atual = 1; // por enquanto só reinicia o ciclo — a Sprint Review fica pra depois 
+    } 
+    
+    global.dia_avancando = false; 
 }
+//Faz o player levantar ao passar do dia
+if (global.transicao_dia > 0) {
+	global.transicao_dia -=1
+	//Se já tiver passado o tempo do player levantar, faz ele levantar
+	if (global.transicao_dia <=0 && instance_exists(obj_player)) {
+		obj_player.deitado = false
+		obj_player.sprite_index = spr_player_idle
+		obj_player.image_speed = 4
+		if (instance_exists(obj_cama)) {
+			obj_player.x = obj_cama.x_levantar
+			obj_player.y = obj_cama.y_levantar
+		}
+	}
+}
+			
+
+
+ 
