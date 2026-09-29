@@ -5,7 +5,7 @@ global.trabalhando = true
 global.hora_entrada_trabalho = global.hora_atual
 
 
-vitoria = 3
+vitoria = 5
 
 aguardando_soltar_interacao = true; 
 pode_digitar = false;
