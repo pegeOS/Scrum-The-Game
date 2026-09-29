@@ -16,3 +16,9 @@ global.acao = (global.dormindo || global.trabalhando)
 function valor_acao(){
 	global.acao = (global.dormindo || global.trabalhando)
 }
+
+global.dia_atual = 1
+global.dia_maximo = 7
+global.dia_avancando = false
+global.transicao_dia = 0
+

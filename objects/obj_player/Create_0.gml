@@ -8,6 +8,8 @@ sprites_movimento = [spr_player_dire, spr_player_costa, spr_player_esq, spr_play
 sprite_parado = spr_player_idle;
 
 move = function(){
+	
+	show_debug_message("move")
 
 	key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 	key_left  = keyboard_check(vk_left)  || keyboard_check(ord("A"));
