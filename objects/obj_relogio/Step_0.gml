@@ -1,6 +1,6 @@
 
 // calcula hora
-var _hora_total = 7.45 + (global.progresso_dia * 14.5); 
+var _hora_total = 7.45 + (global.progresso_dia * 14.55); 
 global.hora_atual = _hora_total; 
 var _hora = floor(_hora_total); 
 var _minuto = floor(frac(_hora_total) * 60); 
