@@ -9,17 +9,17 @@ var alvos = [ 9.9166, 11.9166, 13.9166, 15.9166, 17.9166, 19.9166, 21.9166 ];
 
 // procura o próximo horário quebrado
 for (var i = 0; i < array_length(alvos); i++) {
-	if (alvos[i] > _hora_entrou + 0.05) {
+	if (alvos[i] > _hora_entrou + 0.2) {
 		_proxima_hora = alvos[i];
 		break;
 	}
 }
 
 // transforma a hora nova em uma porcentagem do dia (0.0 a 1.0)
-var _novo_progresso = (_proxima_hora - 7.5) / 14;
+var _novo_progresso = (_proxima_hora - 7.45) / 14.55; 
 _novo_progresso = clamp(_novo_progresso, 0, 1);
 
-// ATUALIZA O TEMPO DECORRIDO (Isso corrige a barra de energia e o relógio de uma vez!)
+// atualiza tempo decorrido
 global.tempo_decorrido = _novo_progresso * global.duracao_dia;
 
 //a atualiza a energia proporcionalmente ao tempo que passou no trabalho

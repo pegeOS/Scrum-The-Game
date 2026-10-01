@@ -98,7 +98,8 @@ mecanica = function(){
 		        keyboard_lastchar = "";
 			    }
 		}
-
+		
+		//desconsiderando espaços
 		var _aleatorio_sem_espaco = string_replace_all(aleatorio, " ", "")
 		var _digit_sem_espaco = string_replace_all(digitando, " ", "")
 	
@@ -112,6 +113,13 @@ mecanica = function(){
 	
 				//adiciona 5 ao valor do progresso
 				global.progresso += vitoria
+				
+				// aumenta o tempo e ativa a animação no obj_timer
+		        with (obj_timer) {
+		            tempo += 300         
+		            feedback_alpha = 1.5 
+		            feedback_y = y - 70
+				 }
 			}
 			else{
 			
