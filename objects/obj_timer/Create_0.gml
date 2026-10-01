@@ -1,4 +1,5 @@
 
 tempo = 1800
 
-alarm[0] = tempo
+feedback_alpha = 0
+feedback_y = y

@@ -7,7 +7,7 @@ if (_mouse_enter && mouse_check_button(mb_left)) {
     image_index = 0;
 }
 
-if (_mouse_enter && mouse_check_button_released(mb_left)) {
+if (_mouse_enter && mouse_check_button_released(mb_left) || keyboard_check_pressed(ord("E"))){
     if (instance_exists(popup_pai)) {
         popup_pai.encolher = true;
 	}
