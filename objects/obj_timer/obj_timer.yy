@@ -11,8 +11,8 @@
   "name":"obj_timer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"acoes",
+    "path":"folders/Objects/acoes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,1 @@
+obj_controlador.cursor = 0

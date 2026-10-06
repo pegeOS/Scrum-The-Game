@@ -18,4 +18,4 @@ if(image_xscale >= 0.7 && image_yscale >= 0.7){
 
 draw_set_font(-1)
 draw_set_color(-1)
-draw_set_alpha(-1)
+draw_set_alpha(1)
