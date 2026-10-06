@@ -9,8 +9,8 @@
   "name":"obj_cama",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"acoes",
+    "path":"folders/Objects/acoes.yy",
   },
   "parentObjectId":null,
   "persistent":true,
