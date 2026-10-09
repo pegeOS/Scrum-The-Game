@@ -1,1 +1,1 @@
-image_index = inicialbar;
+image_index = bar;

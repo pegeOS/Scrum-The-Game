@@ -1,4 +1,4 @@
 sprite_index = spr_barra_de_conhecimento;
-inicialbar = sprite_get_number(sprite_index) - 1;
+bar = sprite_get_number(sprite_index) - 1;
 image_speed = 0;
 image_index = 0;
