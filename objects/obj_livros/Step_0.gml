@@ -12,13 +12,21 @@ if (instance_exists(obj_player)) {
     mostrar_prompt = (_dist <= dist_interacao) && _olhando && !obj_player.estudando;
 
     if (mostrar_prompt && keyboard_check_pressed(ord("E")) && !global.aprender && obj_relogio.cor == c_red) {
-        if (instance_exists(obj_barra_conhecimento) && obj_barra_conhecimento.bar > 0) {
+        if (instance_exists(obj_barra_conhecimento) && global.progresso_conhecimento > 0) {
             
-            // 1. Atualiza a barra de conhecimento
-            obj_barra_conhecimento.bar -= 1;
-            obj_barra_conhecimento.image_speed = 0;
-            if (obj_barra_conhecimento.bar < 0) obj_barra_conhecimento.bar = 0;
-            obj_barra_conhecimento.image_index = obj_barra_conhecimento.bar;
+           // 1. Atualiza a barra de conhecimento (caminhando do frame 11 para o 0)
+			global.progresso_conhecimento -= 1;
+
+			// Garante que não vai descer abaixo de 0 (barra mais do que cheia)
+			if (global.progresso_conhecimento < 0) {
+			    global.progresso_conhecimento = 0;
+			}
+
+			// Atualiza o frame da barra de forma direta e limpa
+			if (instance_exists(obj_barra_conhecimento)) {
+			        obj_barra_conhecimento.image_index = global.progresso_conhecimento;
+			}
+			
 
             // 2. Guarda o horário de entrada
             global.hora_entrada_livros = global.hora_atual;

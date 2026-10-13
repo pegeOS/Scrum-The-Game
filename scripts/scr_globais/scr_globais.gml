@@ -25,4 +25,5 @@ global.dia_maximo = 7
 global.dia_avancando = false
 global.transicao_dia = 0
 global.aparece_tempo = true
+global.progresso_conhecimento = 10
 
