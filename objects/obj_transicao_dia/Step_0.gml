@@ -18,9 +18,11 @@ switch (estado) {
                 global.dia_atual = 1
             }
             global.tempo_decorrido = 0
-            
+			
+            global.dia_atual += 1
             texto_completo = "DIA " + string(global.dia_atual)
-			global.dia_atual += 1
+			
+			
 			
             estado = "digitando"
         }
