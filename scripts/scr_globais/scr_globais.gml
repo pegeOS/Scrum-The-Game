@@ -7,14 +7,17 @@ global.azul = make_colour_rgb(0, 0, 153)
 
 global.dormindo = false
 global.trabalhando = false
+global.aprender = false;
 
 global.hora_entrada_trabalho = 0
 global.hora_entrada_cama = 0
+global.hora_entrada_livros = 0
 
-global.acao = (global.dormindo || global.trabalhando)
+
+global.acao = (global.dormindo || global.trabalhando || global.aprender)
 
 function valor_acao(){
-	global.acao = (global.dormindo || global.trabalhando)
+	global.acao = (global.dormindo || global.trabalhando || global.aprender)
 }
 
 global.dia_atual = 1
