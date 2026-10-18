@@ -19,16 +19,25 @@ for (var i = 0; i < array_length(alvos); i++) {
 var _novo_progresso = (_proxima_hora - 7.45) / 14.55; 
 _novo_progresso = clamp(_novo_progresso, 0, 1);
 
-// atualiza tempo decorrido
+// 1. Salva o tempo decorrido antes do pulo temporal
+var _tempo_anterior = global.tempo_decorrido;
+
+// 2. Atualiza o tempo decorrido global do jogo
 global.tempo_decorrido = _novo_progresso * global.duracao_dia;
 
-//a atualiza a energia proporcionalmente ao tempo que passou no trabalho
-var _segment_max = sprite_get_number(spr_barra_de_energia) - 1;
-with (obj_barra_energia) {
-	energy = _segment_max * (1 - _novo_progresso);
+// 3. Calcula exatamente quantos segundos foram pulados durante o trabalho
+var _segundos_pulados = global.tempo_decorrido - _tempo_anterior;
+
+// 4. Atualiza a energia proporcionalmente ao tempo pulado, usando a nova variável independente
+if (instance_exists(obj_barra_energia)) {
+	var _segment_max = sprite_get_number(spr_barra_de_energia) - 1;
+	with (obj_barra_energia) {
+		var _perda_energia = (_segundos_pulados / tempo_esgotar_energia) * _segment_max;
+		energy -= _perda_energia;
+	}
 }
 
 // variavel global fica falsa e volta para a sala principal
 global.trabalhando = false;
 
-room_goto(rm_quarto)
+room_goto(rm_quarto);
