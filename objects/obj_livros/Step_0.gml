@@ -44,17 +44,24 @@ if (instance_exists(obj_player)) {
                 }
             }
 
-            // 4. Calcula o novo tempo decorrido no dia
+           // 4. Calcula o novo tempo decorrido no dia e salva o tempo anterior
             var _novo_progresso = (_proxima_hora - 7.45) / 14.55; 
             _novo_progresso = clamp(_novo_progresso, 0, 1);
 
+            // Salva o tempo decorrido de antes para saber quantos segundos foram pulados
+            var _tempo_anterior = global.tempo_decorrido; 
             global.tempo_decorrido = _novo_progresso * global.duracao_dia;
+            
+            var _segundos_pulados = global.tempo_decorrido - _tempo_anterior;
 
             // 5. Atualiza a barra de energia
             if (instance_exists(obj_barra_energia)) {
                 var _segment_max = sprite_get_number(spr_barra_de_energia) - 1;
+                
                 with (obj_barra_energia) {
-                    energy = _segment_max * (1 - _novo_progresso);
+                    // Calcula a energia a ser perdida baseada no tempo pulado e na nova variável
+                    var _perda_energia = (_segundos_pulados / tempo_esgotar_energia) * _segment_max;
+                    energy -= _perda_energia;
                 }
             }
 
