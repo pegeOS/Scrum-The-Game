@@ -1,4 +1,5 @@
-
+// Inicializa a variável para evitar erro no Room Start
+global.acordar_no_pc = false;
 depth = -99
 
 // controle de opacidade e estado
@@ -18,6 +19,10 @@ inicio_jogo = function() {
     texto_completo = "DIA " + string(global.dia_atual)
     texto_desenhado = ""
     indice_letra = 0
+	 // === MUDANÇA: Muda para a room da Daily enquanto a tela está preta ===
+    show_debug_message("A MUDAR PARA A SALA DA DAILY AGORA!");
+	room_goto(rm_daily);
+            
 }
 // funcao para iniciar a transição de qualquer lugar do jogo
 iniciar_transicao = function() {
