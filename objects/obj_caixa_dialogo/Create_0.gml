@@ -17,6 +17,6 @@ esperando_resposta = false; // Trava o avanço do diálogo
 
 // Posições e tamanhos da caixa de diálogo
 caixa_x = 50;
-caixa_y = room_height - 150;
+caixa_y = room_height - 180;
 caixa_largura = room_width - 100;
-caixa_altura = 120;
+caixa_altura = 150;

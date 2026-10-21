@@ -1,12 +1,7 @@
-if (instance_exists(id_dialogo)) {
-    // Avança a pergunta na caixa de diálogo
-    id_dialogo.indice_atual += 1;
+// Verifica se o alarme ainda não foi ativado para evitar cliques duplos
+if (alarm[0] == -1) {
+    image_index = 1; // Muda para o frame do botão clicado
     
-    // Libera a caixa para criar a próxima rodada de botões
-    id_dialogo.esperando_resposta = false;
-    
-    // Destrói TODOS os botões de resposta da tela
-    with (obj_botao_resposta) {
-        instance_destroy();
-    }
+    // Define um tempo de espera de 10 frames (aprox. 0.15s) antes de avançar
+    alarm[0] = 10; 
 }

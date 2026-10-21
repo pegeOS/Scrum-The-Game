@@ -1,5 +1,6 @@
 // Desenha a caixa de diálogo (fundo preto)
 draw_set_color(c_black);
+draw_set_font(fnt_windows)
 draw_rectangle(caixa_x, caixa_y, caixa_x + caixa_largura, caixa_y + caixa_altura, false);
 
 // Desenha a borda da caixa (branca)
@@ -7,9 +8,8 @@ draw_set_color(c_white);
 draw_rectangle(caixa_x, caixa_y, caixa_x + caixa_largura, caixa_y + caixa_altura, true);
 
 // Desenha o sprite do Chefe redimensionado para caber na caixa
-// (Substitua 'spr_chefe' pelo nome exato do seu sprite, se for diferente)
 // Os valores 80 e 100 forçam a largura e altura da imagem
-draw_sprite_stretched(spr_chefe, 0, caixa_x + 10, caixa_y + 10, 80, 100);
+draw_sprite_stretched(spr_chefe, 0, caixa_x, caixa_y + 10, 100, 100);
 
 // Configurações do texto
 draw_set_color(c_white);
@@ -29,3 +29,5 @@ else {
     draw_set_color(c_gray);
     draw_text(caixa_x + 110, caixa_y + 80, "(Clique em qualquer lugar para fechar)");
 }
+
+draw_set_font(-1)
