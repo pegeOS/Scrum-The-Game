@@ -33,6 +33,7 @@ switch (estado) {
             }
 
             global.tempo_decorrido = 0
+			global.daily_pendente = true
 
 
             global.dia_atual += 1

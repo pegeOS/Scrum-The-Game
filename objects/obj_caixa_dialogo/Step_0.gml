@@ -45,6 +45,8 @@ if (!esperando_resposta && indice_atual < array_length(perguntas)) {
 } 
 else if (indice_atual >= array_length(perguntas)) {
     if (mouse_check_button_pressed(mb_left)) {
-        instance_destroy();
+        global.daily_pendente = false
+        global.tempo_decorrido = ((7.92 - 7.45) / 14.55) * global.duracao_dia   // ~7:55
+        room_goto(rm_quarto)
     }
 }

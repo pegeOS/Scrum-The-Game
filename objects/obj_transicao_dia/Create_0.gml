@@ -14,6 +14,7 @@ inicio_jogo = function() {
     texto_completo = "DIA " + string(global.dia_atual);
     texto_desenhado = "";
     indice_letra = 0;
+	global.daily_pendente = true
 };
 
 // funcao para iniciar a transição de qualquer lugar do jogo
