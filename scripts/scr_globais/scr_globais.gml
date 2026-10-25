@@ -26,4 +26,4 @@ global.dia_avancando = false
 global.transicao_dia = 0
 global.aparece_tempo = true
 global.progresso_conhecimento = 10
-
+global.daily_pendente = false

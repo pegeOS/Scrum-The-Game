@@ -15,6 +15,8 @@ alvos_quebrados = [
 ];
 
 verificar_horario = function() {
+	if (global.daily_pendente) { cor = c_yellow; exit }
+	if (cor == c_yellow) cor = c_white
 	valor_acao();
 	
 	if (global.acao == true) {

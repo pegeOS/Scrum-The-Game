@@ -2,7 +2,10 @@
 var _delta = delta_time / 1000000
 
 // atualiza o tempo decorrido do dia
-if (global.dormindo) {
+if (global.daily_pendente) {
+    // trava o dia em ~7:30 (7.51 evita arredondar pra 7:29)
+    global.tempo_decorrido = ((7.51 - 7.45) / 14.55) * global.duracao_dia
+} else if (global.dormindo) {
     var _fator_aceleracao = global.duracao_dia / global.duracao_sono
     global.tempo_decorrido += (_delta * _fator_aceleracao)
 } else {
