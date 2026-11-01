@@ -3,7 +3,7 @@ var _delta = delta_time / 1000000
 
 if (global.dormindo) {
     // calcula a quantidade de energia que deve subir por segundo
-    var _taxa = segment_max / global.duracao_sono
+    var _taxa = (segment_max / global.duracao_sono) * 2
     energy += _taxa * _delta 
 } 
 else {

@@ -1,5 +1,7 @@
 
 global.progresso = 0
+global.nivel_conhecimento = 0 //associada a barra de conhecimento e bonus de progresso
+
 
 global.tutorial_pc = false
 global.veio_do_tutorial = false

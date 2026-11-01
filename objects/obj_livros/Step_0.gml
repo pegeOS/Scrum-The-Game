@@ -69,6 +69,14 @@ if (instance_exists(obj_player)) {
             obj_relogio.cor = c_white;
             global.aprender = false;
             
+			
+			// Aumenta 2 de conhecimento de uma vez
+			global.nivel_conhecimento += 2;
+
+			// Trava no limite máximo da sua sprite (ex: se a barra tem 10 frames)
+			if (global.nivel_conhecimento > 9) {
+				global.nivel_conhecimento = 9;
+}
         }
     }
 }
