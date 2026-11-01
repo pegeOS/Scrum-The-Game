@@ -111,8 +111,12 @@ mecanica = function(){
 				//reseta
 				reset()
 	
-				//adiciona 5 ao valor do progresso
-				global.progresso += vitoria
+				// CALCULA O BÔNUS DE CONHECIMENTO
+				// Divide o conhecimento por 2 (arredondando para baixo caso seja ímpar)
+				var bonus_atual = floor(global.nivel_conhecimento / 2);
+				
+				//adiciona 5 (vitoria) + o bonus ao valor do progresso
+				global.progresso += vitoria + bonus_atual;
 				
 				// aumenta o tempo e ativa a animação no obj_timer
 		        with (obj_timer) {
