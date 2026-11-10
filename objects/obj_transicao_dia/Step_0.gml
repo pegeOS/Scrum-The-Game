@@ -25,10 +25,9 @@ switch (estado) {
             // avanca o dia de verdade enquanto a tela esta 100% preta
 
             if (global.dia_atual > global.dia_maximo) {
-
-//O QUE ACONTECE DEPOIS DO DIA 7
-
-                global.dia_atual = 1
+				room_goto(rm_sprint_review);
+			
+                
 
             }
 
@@ -37,7 +36,7 @@ switch (estado) {
 
 
             global.dia_atual += 1
-
+			
             texto_completo = "DIA " + string(global.dia_atual)
 
 
