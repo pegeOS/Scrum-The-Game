@@ -23,9 +23,10 @@ switch (estado) {
             
 
             // avanca o dia de verdade enquanto a tela esta 100% preta
-
-            if (global.dia_atual > global.dia_maximo) {
+			show_debug_message(global.dia_atual)
+            if (global.dia_atual == global.dia_maximo) {
 				room_goto(rm_sprint_review);
+				exit
 			
                 
 
