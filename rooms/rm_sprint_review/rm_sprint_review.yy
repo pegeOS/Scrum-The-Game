@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_sprint_review",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_sprint_review/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

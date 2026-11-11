@@ -1,5 +1,5 @@
 // ---- ajustes pra balancear ----
-duracao = 30              // segundos de review
+duracao = 50              // segundos de review
 intervalo_spawn = 1.5     // segundos entre bugs
 max_bugs = 10
 dano_por_bug = 0.3        // % por segundo que cada bug vivo tira da barra
@@ -23,3 +23,7 @@ tempo_restante = duracao
 timer_spawn = 0
 iniciou = false
 acabou = false
+
+depth = -10          // o fundo preto da tela final fica por cima dos bugs
+fim_alpha = 0
+botoes_criados = false

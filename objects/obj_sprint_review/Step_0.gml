@@ -3,7 +3,30 @@ if (!iniciou) {
     if (!instance_exists(obj_transicao_dia) || obj_transicao_dia.estado == "inativo") iniciou = true
     exit
 }
-if (acabou) exit
+if (acabou) {
+    with (obj_bug) instance_destroy()
+    with (obj_barra_progresso) visible = false
+
+    fim_alpha = min(fim_alpha + 0.02, 1)   // ~1 s pra escurecer
+
+    // quando a tela termina de escurecer, cria os dois botões (uma vez só)
+    if (fim_alpha >= 1 && !botoes_criados) {
+        botoes_criados = true
+
+        var _b1 = instance_create_layer(room_width / 2, room_height / 2 + 60, "Instances", obj_botao)
+        _b1.texto = "Nova sprint"
+        _b1.image_xscale = 2
+        _b1.image_yscale = 0.7
+        _b1.depth = -50
+
+        var _b2 = instance_create_layer(room_width / 2, room_height / 2 + 170, "Instances", obj_botao)
+        _b2.texto = "Encerrar"
+        _b2.image_xscale = 2
+        _b2.image_yscale = 0.7
+        _b2.depth = -50
+    }
+    exit
+}
 
 var _delta = delta_time / 1000000
 

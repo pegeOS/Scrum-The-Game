@@ -83,6 +83,7 @@
     {"id":{"name":"rm_sprint_review","path":"rooms/rm_sprint_review/rm_sprint_review.yy",},},
     {"id":{"name":"scr_globais","path":"scripts/scr_globais/scr_globais.yy",},},
     {"id":{"name":"scr_quebrar_texto","path":"scripts/scr_quebrar_texto/scr_quebrar_texto.yy",},},
+    {"id":{"name":"snd_sprintReview","path":"sounds/snd_sprintReview/snd_sprintReview.yy",},},
     {"id":{"name":"snd_testeQuarto","path":"sounds/snd_testeQuarto/snd_testeQuarto.yy",},},
     {"id":{"name":"bg_quarto","path":"sprites/bg_quarto/bg_quarto.yy",},},
     {"id":{"name":"bg_review","path":"sprites/bg_review/bg_review.yy",},},

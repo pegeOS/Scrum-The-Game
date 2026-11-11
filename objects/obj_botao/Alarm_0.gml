@@ -19,3 +19,11 @@ if( texto == "Créditos"){
 
 	room_goto(rm_creditos)
 }
+
+if (texto == "Nova sprint") {
+    iniciar_nova_sprint()
+}
+
+if (texto == "Encerrar") {
+    game_end()
+}
