@@ -12,7 +12,8 @@ area_x2 = 720
 area_y2 = 800
 
 // posição do texto "Bugs" e "Tempo" (por cima do SITE)
-hud_x = 40
+hud_x = 600          // era 40: joga o texto pra direita da barra
+escala_bug = 0.5     // 0.5 = metade do tamanho (0.4 menor, 0.6 maior)
 hud_y = 20
 
 // ---- estado ----

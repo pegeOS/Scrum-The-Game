@@ -11,11 +11,14 @@ var _delta = delta_time / 1000000
 timer_spawn += _delta
 if (timer_spawn >= intervalo_spawn && instance_number(obj_bug) < max_bugs) {
     timer_spawn = 0
+    var _raio = (sprite_get_width(spr_bug) * escala_bug) / 2   // raio acompanha o tamanho do bug
     repeat (10) {
         var _x = random_range(area_x1, area_x2)
         var _y = random_range(area_y1, area_y2)
-        if (collision_circle(_x, _y, 40, obj_bug, false, true) == noone) {
-            instance_create_layer(_x, _y, "Instances", obj_bug)
+        if (collision_circle(_x, _y, _raio, obj_bug, false, true) == noone) {
+            var _bug = instance_create_layer(_x, _y, "Instances", obj_bug)
+            _bug.image_xscale = escala_bug
+            _bug.image_yscale = escala_bug
             break
         }
     }

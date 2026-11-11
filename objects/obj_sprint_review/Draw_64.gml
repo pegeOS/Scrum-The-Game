@@ -5,7 +5,7 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
 draw_text(hud_x, hud_y, "Bugs: " + string(instance_number(obj_bug)))
-draw_text(hud_x, hud_y + 30, "Tempo: " + string(ceil(tempo_restante)))
+draw_text(hud_x, hud_y + 45, "Tempo: " + string(ceil(tempo_restante)))
 
 if (acabou) {
     draw_set_halign(fa_center)
