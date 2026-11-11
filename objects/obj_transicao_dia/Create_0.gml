@@ -6,6 +6,7 @@ texto_completo = "";
 texto_desenhado = "";
 indice_letra = 0;
 timer = 0;
+ir_para_review = false
 
 inicio_jogo = function() {
     estado = "digitando";

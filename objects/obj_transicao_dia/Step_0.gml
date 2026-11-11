@@ -19,25 +19,19 @@ switch (estado) {
         if (alpha_tela >= 1) {
 
             alpha_tela = 1
+			global.dia_atual += 1
+			
 
             
 
             // avanca o dia de verdade enquanto a tela esta 100% preta
-			show_debug_message(global.dia_atual)
             if (global.dia_atual == global.dia_maximo) {
-				room_goto(rm_sprint_review);
-				exit
-			
-                
-
+			ir_para_review = true
+			texto_completo = "DIA " + string(global.dia_atual) + " - SPRINT REVIEW"
             }
 
             global.tempo_decorrido = 0
 			global.daily_pendente = true
-
-
-            global.dia_atual += 1
-			
             texto_completo = "DIA " + string(global.dia_atual)
 
 
@@ -101,6 +95,7 @@ switch (estado) {
             timer = 0
 
             estado = "some"
+			if (ir_para_review) room_goto(rm_sprint_review)
 
         }
 
@@ -121,10 +116,18 @@ switch (estado) {
             alpha_tela = 0
 
             texto_desenhado = ""
-
-            estado = "esperando_acordar"
-
             timer = 0
+			
+			if (ir_para_review) {
+				// não tem player pra acordar na review: encerra a transição aqui
+		        ir_para_review = false
+		        global.dia_avancando = false
+		        global.dormindo = false
+				estado = "inativo"
+			}
+			else {
+				estado = "esperando_acordar"
+			}
 
         }
 
