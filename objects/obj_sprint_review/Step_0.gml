@@ -1,0 +1,44 @@
+// só começa quando a transição de tela preta terminar
+if (!iniciou) {
+    if (!instance_exists(obj_transicao_dia) || obj_transicao_dia.estado == "inativo") iniciou = true
+    exit
+}
+if (acabou) exit
+
+var _delta = delta_time / 1000000
+
+// nascem bugs em pontos aleatórios, sem sobrepor outro bug
+timer_spawn += _delta
+if (timer_spawn >= intervalo_spawn && instance_number(obj_bug) < max_bugs) {
+    timer_spawn = 0
+    repeat (10) {
+        var _x = random_range(area_x1, area_x2)
+        var _y = random_range(area_y1, area_y2)
+        if (collision_circle(_x, _y, 40, obj_bug, false, true) == noone) {
+            instance_create_layer(_x, _y, "Instances", obj_bug)
+            break
+        }
+    }
+}
+
+// clique elimina o bug que está sob o cursor
+if (mouse_check_button_pressed(mb_left)) {
+    var _bug = instance_position(mouse_x, mouse_y, obj_bug)
+    if (_bug != noone) {
+        instance_destroy(_bug)
+        bugs_mortos++
+        prog += recompensa
+    }
+}
+
+// bugs vivos drenam a barra
+prog -= instance_number(obj_bug) * dano_por_bug * _delta
+prog = clamp(prog, 0, 100)
+global.progresso = round(prog)
+
+// fim da review
+tempo_restante -= _delta
+if (tempo_restante <= 0) {
+    tempo_restante = 0
+    acabou = true
+}

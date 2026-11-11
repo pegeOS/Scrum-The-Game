@@ -1,0 +1,1 @@
+image_angle = random_range(-15, 15)   // só pra não ficar tudo igual
