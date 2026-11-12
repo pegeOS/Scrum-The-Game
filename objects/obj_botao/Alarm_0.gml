@@ -1,7 +1,7 @@
 
 if( texto == "Jogar"){
 	
-	global.dia_atual = 1
+	global.dia_atual = 6
 
 //cria transicao objeto se nao existir
 	if(!instance_exists(obj_transicao_dia)){
@@ -18,4 +18,12 @@ if( texto == "Jogar"){
 if( texto == "Créditos"){
 
 	room_goto(rm_creditos)
+}
+
+if (texto == "Nova sprint") {
+    iniciar_nova_sprint()
+}
+
+if (texto == "Encerrar") {
+    game_end()
 }

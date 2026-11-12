@@ -1,5 +1,4 @@
 
-
 draw_self()
 
 draw_set_font(fnt_windows_grande)
@@ -23,8 +22,8 @@ else{
 draw_sprite_stretched_ext(spr_botao2, 0, x - 10 + _x, y - 6, barra_w + 10, barra_h + 10, c_white, 1)
 draw_rectangle(x + _x, y, x + _x + amount, y + barra_h - 5, false)
 
-//limitando atributos dependendo da room
-if(room == rm_quarto){
+//cor branca na porcentagem (quarto e sprint review)
+if(room == rm_quarto || room == rm_sprint_review){
 	draw_set_colour(c_white)
 }
 

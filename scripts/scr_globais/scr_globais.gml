@@ -29,3 +29,26 @@ global.transicao_dia = 0
 global.aparece_tempo = true
 global.progresso_conhecimento = 10
 global.daily_pendente = false
+
+function iniciar_nova_sprint() {
+    global.dia_atual = 1
+    global.progresso = 0
+    global.tempo_decorrido = 0
+    global.progresso_dia = 0
+    global.dormindo = false
+    global.trabalhando = false
+    global.aprender = false
+    global.dia_avancando = false
+
+    // energia cheia de novo (o obj_barra_energia é persistente)
+    if (instance_exists(obj_barra_energia)) {
+        obj_barra_energia.energy = obj_barra_energia.segment_max
+    }
+
+    // mesma sequência do botão "Jogar": tela "DIA 1" e vai pro quarto
+    if (!instance_exists(obj_transicao_dia)) {
+        instance_create_layer(0, 0, "Instances", obj_transicao_dia)
+    }
+    obj_transicao_dia.inicio_jogo()
+    room_goto(rm_quarto)
+}
