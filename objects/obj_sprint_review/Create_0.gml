@@ -1,6 +1,6 @@
 // ---- ajustes pra balancear ----
 duracao = 50              // segundos de review
-intervalo_spawn = 1.5     // segundos entre bugs
+intervalo_spawn = 0.99     // segundos entre bugs
 max_bugs = 10
 dano_por_bug = 0.3        // % por segundo que cada bug vivo tira da barra
 recompensa = 1.5          // % que volta ao matar um bug

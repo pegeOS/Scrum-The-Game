@@ -42,18 +42,26 @@ if (timer_spawn >= intervalo_spawn && instance_number(obj_bug) < max_bugs) {
             var _bug = instance_create_layer(_x, _y, "Instances", obj_bug)
             _bug.image_xscale = escala_bug
             _bug.image_yscale = escala_bug
+			_bug.escala_base = escala_bug
             break
         }
     }
 }
 
+
+
 // clique elimina o bug que está sob o cursor
 if (mouse_check_button_pressed(mb_left)) {
     var _bug = instance_position(mouse_x, mouse_y, obj_bug)
     if (_bug != noone) {
-        instance_destroy(_bug)
-        bugs_mortos++
-        prog += recompensa
+        _bug.vidas --
+		_bug.hit_timer = _bug.hit_duracao   // só liga o efeito; quem anima é o obj_bug
+
+        if (_bug.vidas <=0) {
+			instance_destroy(_bug)
+			bugs_mortos++
+	        prog += recompensa
+		}
     }
 }
 

@@ -13,6 +13,7 @@ if (!acabou) {
     draw_set_valign(fa_middle)
     draw_set_alpha(fim_alpha)
     draw_text_transformed(display_get_gui_width() / 2, display_get_gui_height() / 2 - 80, "SPRINT CONCLUIDA: " + string(global.progresso) + "%", 1, 0.6, 0)
+	
 }
 
 draw_set_alpha(1)
